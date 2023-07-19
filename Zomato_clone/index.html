@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zomato Clone</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/7916de85f4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io (2)/favicon-32x32.png"
+    />
+  </head>
+  <style>
+    .button11{
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        background-color: white; 
+        color: black; 
+        border: 2px solid #9f6565;
+      }
+      
+      .button12{
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        background-color: white; 
+        color: black; 
+        border: 2px solid #9f6565;
+      }
+      
+      .button11:hover {
+        background-color: #e1afaf;
+        color: white;
+      }
+      
+      .button12:hover {
+        background-color: #e1afaf;
+        color: white;
+      }
+      .box{
+        background-color: rgb(226, 186, 186);
+      }
+      .mainsection{
+        background-color: rgba(188, 79, 79, 0.579);
+      }
+      a{
+        color: #9f6565;
+      }
+
+  </style>
+  <body>
+    <div class="box">
+      <div class="mainsection">
+        <div class="img"><img src="img/zomato.webp" alt="zomato" /></div>
+        <div class="searchbox">
+          <div class="location">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <select name="" id="" class="loc">
+            <option value="">Mumbai</option>
+            <option value="">Hyderabad</option>
+            <option value="">Delhi</option>
+            <option value="">Chennai</option>
+            <option value="">Kolkata</option>
+          </select>
+          <div class="line"></div>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            placeholder="Search for restaurant,cuisine or a dish"
+            class="search"
+          />
+        </div>
+        <div class="nav">
+          <p>
+            <button class="button11"><a href="index1.html" target="_parent" style="text-decoration:underlined;">Log in</a></button> 
+          </p>
+          <p>
+            <button class="button12"><a href="index2.html" target="_parent" style="text-decoration: none">Sign up</a></button>
+          </p>
+        </div>
+      </div>
+      <hr style="border-top: 1px solid lightgray; width: 100%" />
+      <div class="filter">
+        <input type="button" value="Filters" />
+        <select name="" id="" class="cu">
+            <option value="" selected disabled>4.5*+</option>
+            <option value="">3.5*+</option>
+            <option value="">3.0*+</option>
+            <option value="">2.5*+</option>
+            <option value="">2.0*+</option>
+            <option value="">Below 2*</option>
+          </select>
+        <select name="" id="" class="cu">
+          <option value="" selected disabled>Cuisines</option>
+          <option value="">Chinese</option>
+          <option value="">Indian</option>
+          <option value="">Italian</option>
+          <option value="">Mughalai</option>
+          <option value="">Continental</option>
+        </select>
+      </div>
+      <div class="main">
+        <h1 style="margin-left: 28px">Inspiration for your first order</h1>
+        <div class="parent">
+          <div class="food">
+            <img src="img/pizza.webp" alt="pizza" />
+            <h3>Pizza</h3>
+          </div>
+          <div class="food">
+            <img src="img/burger.webp" alt="pizza" />
+            <h3>Burger</h3>
+          </div>
+          <div class="food">
+            <img src="img/chicken.webp" alt="pizza" />
+            <h3>Chicken</h3>
+          </div>
+          <div class="food">
+            <img src="img/biryani.webp" alt="pizza" />
+            <h3>Biryani</h3>
+          </div>
+          <div class="food">
+            <img src="img/cake.webp" alt="pizza" />
+            <h3>Cake</h3>
+          </div>
+          <div class="food">
+            <img src="img/sandwich.avif" alt="pizza" />
+            <h3>Sandwich</h3>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <h1 style="margin-left: 28px">Top brands for you</h1>
+        <div class="parent">
+          <div class="food">
+            <img src="img/domi.png" alt="pizza" />
+            <h3>Dominos</h3>
+          </div>
+          <div class="food">
+            <img src="img/sub.png" alt="pizza" />
+            <h3>Subway</h3>
+          </div>
+          <div class="food">
+            <img src="img/mcd.png" alt="pizza" />
+            <h3>McDonald's</h3>
+          </div>
+          <div class="food">
+            <img src="img/kfc.png" alt="pizza" />
+            <h3>KFC</h3>
+          </div>
+          <div class="food">
+            <img src="img/dd.png" alt="pizza" />
+            <h3>Dunkin' Donuts</h3>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h1 style="margin-left: 28px">Best food in Mumbai</h1>
+        <div class="flex">
+          <div class="food-items">
+            <div class="position">
+              <img src="img/dosa.png" alt="f1" />
+              <div class="off">50% OFF upto 100</div>
+            </div>
+            <div class="card">
+              <div class="mainbox">
+                <h3>Shiv Sagar</h3>
+                <p>South Indian</p>
+              </div>
+              <div class="box">
+                <input type="button" value="4.2*" class="btn" />
+                <h4>₹100 for one</h4>
+              </div>
+            </div>
+          </div>
+          <div class="food-items">
+            <div class="position">
+              <img src="img/piz.png" alt="f1" />
+              <div class="off">15% OFF upto 50</div>
+            </div>
+            <div class="card">
+              <div class="mainbox">
+                <h3>Mojo Pizza</h3>
+                <p>Italian, Beverages</p>
+              </div>
+              <div class="box">
+                <input type="button" value="4.0*" class="btn" />
+                <h4>₹350 for one</h4>
+              </div>
+            </div>
+          </div>
+          <div class="food-items">
+            <div class="position">
+              <img src="img/burg.png" alt="f1" />
+              <div class="off">50% OFF upto 200</div>
+            </div>
+            <div class="card">
+              <div class="mainbox">
+                <h3>McDonald's</h3>
+                <p>Fast Food, Beverages</p>
+              </div>
+              <div class="box">
+                <input type="button" value="3.9*" class="btn" />
+                <h4>₹250 for one</h4>
+              </div>
+            </div>
+          </div>
+          <div class="food-items">
+            <div class="position">
+              <img src="img/mer.png" alt="f1" />
+              <div class="off">10% OFF upto 50</div>
+            </div>
+            <div class="card">
+              <div class="mainbox">
+                <h3>Merwaan's</h3>
+                <p>Bakery,Dessert</p>
+              </div>
+              <div class="box">
+                <input type="button" value="3.5*" class="btn" />
+                <h4>₹350 for one</h4>
+              </div>
+            </div>
+          </div>
+          <div class="food-items">
+            <div class="position">
+              <img src="img/f3.webp" alt="f1" />
+              <div class="off">50% OFF upto 150</div>
+            </div>
+            <div class="card">
+              <div class="mainbox">
+                <h3>Lucky Restaurant</h3>
+                <p>North Indian,Chinese</p>
+              </div>
+              <div class="box">
+                <input type="button" value="4.1*" class="btn" />
+                <h4>₹450 for one</h4>
+              </div>
+            </div>
+          </div>
+          <div class="food-items">
+            <div class="position">
+              <img src="img/waf.png" alt="f1" />
+              <div class="off">40% OFF upto 200</div>
+            </div>
+            <div class="card">
+              <div class="mainbox">
+                <h3>Belgian Waffle</h3>
+                <p>Pancake,Waffle,</p>
+              </div>
+              <div class="box">
+                <input type="button" value="4.0*" class="btn" />
+                <h4>₹200 for one</h4>
+              </div>
+            </div>
+          </div>
+          <div class="food-items">
+            <div class="position">
+              <img src="img/bir.png" alt="f1" />
+              <div class="off">40% OFF upto 200</div>
+            </div>
+            <div class="card">
+              <div class="mainbox">
+                <h3>Behrouz Biryani</h3>
+                <p>Indian,Mughalayi</p>
+              </div>
+              <div class="box">
+                <input type="button" value="4.4*" class="btn" />
+                <h4>₹600 for one</h4>
+              </div>
+            </div>
+          </div>
+          <div class="food-items">
+            <div class="position">
+              <img src="img/pizz.png" alt="f1" />
+              <div class="off">40% OFF upto 200</div>
+            </div>
+            <div class="card">
+              <div class="mainbox">
+                <h3>1441 Pizzeria</h3>
+                <p>Pizza,Italian</p>
+              </div>
+              <div class="box">
+                <input type="button" value="4.8*" class="btn" />
+                <h4>₹400 for one</h4>
+              </div>
+            </div>
+          </div>
+          <div class="food-items">
+            <div class="position">
+              <img src="img/ice.png" alt="f1" />
+              <div class="off">40% OFF upto 200</div>
+            </div>
+            <div class="card">
+              <div class="mainbox">
+                <h3>Natural's Icecream</h3>
+                <p>Icecream,Desserts</p>
+              </div>
+              <div class="box">
+                <input type="button" value="4.2*" class="btn" />
+                <h4>₹100 for one</h4>
+              </div>
+            </div>
+          </div>
+          <div class="food-items">
+            <div class="position">
+              <img src="img/star.png" alt="f1" />
+              <div class="off">40% OFF upto 200</div>
+            </div>
+            <div class="card">
+              <div class="mainbox">
+                <h3>Starbucks</h3>
+                <p>Coffee,Desserts</p>
+              </div>
+              <div class="box">
+                <input type="button" value="3.8*" class="btn" />
+                <h4>₹700 for one</h4>
+              </div>
+            </div>
+          </div>
+          <div class="food-items">
+            <div class="position">
+              <img src="img/wok.png" alt="f1" />
+              <div class="off">40% OFF upto 200</div>
+            </div>
+            <div class="card">
+              <div class="mainbox">
+                <h3>Chinese Wok</h3>
+                <p>Chinese,Momos</p>
+              </div>
+              <div class="box">
+                <input type="button" value="3.7*" class="btn" />
+                <h4>₹500 for one</h4>
+              </div>
+            </div>
+          </div>
+          <div class="food-items">
+            <div class="position">
+              <img src="img/don.png" alt="f1" />
+              <div class="off">40% OFF upto 200</div>
+            </div>
+            <div class="card">
+              <div class="mainbox">
+                <h3>Mad over donuts</h3>
+                <p>Donuts, Beverages</p>
+              </div>
+              <div class="box">
+                <input type="button" value="4.0*" class="btn" />
+                <h4>₹200 for one</h4>
+              </div>
+            </div>
+          </div>
+    <footer>
+      <div class="header"><h1>Zomato</h1></div>
+      <div class="footer">
+        <div class="about">
+          <ul>
+            ABOUT ZOMATO
+            <li>Who we are</li>
+            <li>Blog</li>
+            <li>Work with us</li>
+            <li>Investor relations</li>
+            <li>Report fraud</li>
+            <li>Contact us</li>
+          </ul>
+        </div>
+        <div class="zomo">
+          <ul>
+            ZOMAVERSE
+            <li>Zomato</li>
+            <li>Blinkit</li>
+            <li>Feeding India</li>
+            <li>Hyperpure</li>
+            <li>Zomaland</li>
+          </ul>
+        </div>
+        <div class="learn">
+          <ul>
+            LEARN MORE
+            <li>Privacy</li>
+            <li>Security</li>
+            <li>Terms</li>
+            <li>Sitemap</li>
+          </ul>
+        </div>
+        <div class="social">
+          SOCIAL LINKS <br />
+          <div class="a">
+            <a href="https://in.linkedin.com/company/zomato" target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://www.instagram.com/zomato/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://twitter.com/i/flow/login?redirect_after_login=%2Fzomato"
+              target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="https://www.facebook.com/zomato" target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://www.youtube.com/zomato" target="_blank"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
